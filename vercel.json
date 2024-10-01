@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "app.py",
-        "use": "@vercel/python"
+        "use": "@vercel/python@3.11"
       }
     ],
     "routes": [
@@ -11,7 +11,6 @@
         "src": "/(.*)",
         "dest": "app.py"
       }
-    ],
-    "buildCommand": "pip install --upgrade pip"
+    ]
   }
   
